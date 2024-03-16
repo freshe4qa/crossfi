@@ -110,7 +110,7 @@ crossfid keys unsafe-export-eth-key wallet
 
 4) Send XFI and MPX in one transaction
 
-Здесь от нас требуется отправить токены XFI и MPX на 1 адрес одной транзакцией. Отправляем чуть-чуть токенов, так как они на еще понадобятся.
+Здесь от нас требуется отправить токены XFI и MPX на 1 адрес одной транзакцией. Отправляем чуть-чуть токенов, так как они нам еще понадобятся.
 
 ![UGchzJkLfC](https://github.com/freshe4qa/crossfi/assets/85982863/8dad5254-a66b-4941-b715-a470c270c15a)
 
