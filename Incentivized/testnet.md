@@ -131,3 +131,14 @@ crossfid keys unsafe-export-eth-key wallet
 ![BGK4hZhXbp](https://github.com/freshe4qa/crossfi/assets/85982863/c1e04a8b-fc50-4e83-9b29-d6fd644db7c2)
 
 На этом выполнение заданий окончено. Каждые 24ч Вы можете запрашивать токены и повторять действия. Чем чаще Вы будете запрашивать токены и выполнять задания, тем больше баллов Вы получите.
+
+6) Появилось еще одно задание Transfer (Send Foundation token (XFT))
+
+Для его выполнения идем на сраницу [EVM](https://test.xficonsole.com/wallet?type=evm) и добавляем (Import Token -> User token) токен по контракту 0xDb5C548684221Ce2f55F16456Ec5Cf43a028D8e9.
+
+![](https://docs.crossfi.org/~gitbook/image?url=https:%2F%2Flh7-us.googleusercontent.com%2FR9S7es-aOdQcm-uCBukCqh3WtlWbHguRon9YmuEW7B3HkEZzuDtwRKJl3lPuaEZSU1ryV9kySka1H9iOUbCTteIREeKUi421OxqmY0EC-TSr1VvZfU-lnt4JT8JDQzDsAR5jwcz4ogWmDXqXltrZ0vo&width=768&dpr=1&quality=100&sign=8251500aabfae3657f8e92225267b29b7c4193f2940ea93af05f02dca3125e9a)
+
+
+После отправляем любое количество добавленного токена на любой EVM адрес и по уже знакомой процедуре предоставляем hash транзакции.
+
+![](https://docs.crossfi.org/~gitbook/image?url=https:%2F%2Flh7-us.googleusercontent.com%2FgKCbc3zQfHNR7Ml9Xd9CINrl8ahcxP6Dr4JCPPiTPggx8TDJPKrHwGvhcr3ej78Kn8l-IjtDsaVbFqnQZWsIp6fGYOCtkD8CmWkzMeGedKHo06NrO2DRcXH-kqwwbCf3m3LQ8wVnjyq_VUB2Rsy3aUk&width=768&dpr=1&quality=100&sign=d760336842731378d9ad30e9e43a3fa433d92f2892b0b5f4516307611346875c)
