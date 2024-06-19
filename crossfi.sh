@@ -70,12 +70,12 @@ source $HOME/.bash_profile
 fi
 
 # download binary
-cd $HOME
-wget https://github.com/crossfichain/crossfi-node/releases/download/v0.3.0-prebuild3/crossfi-node_0.3.0-prebuild3_linux_amd64.tar.gz && tar -xf crossfi-node_0.3.0-prebuild3_linux_amd64.tar.gz
-tar -xvf crossfi-node_0.3.0-prebuild3_linux_amd64.tar.gz
+cd $HOME && mkdir -p $HOME/go/bin
+curl -L https://github.com/crossfichain/crossfi-node/releases/download/v0.3.0-prebuild9/crossfi-node_0.3.0-prebuild9_linux_amd64.tar.gz > crossfi-node_0.3.0-prebuild9_linux_amd64.tar.gz
+tar -xvzf crossfi-node_0.3.0-prebuild9_linux_amd64.tar.gz
 chmod +x $HOME/bin/crossfid
 mv $HOME/bin/crossfid $HOME/go/bin
-rm -rf crossfi-node_0.3.0-prebuild3_linux_amd64.tar.gz $HOME/bin
+rm -rf crossfi-node_0.3.0-prebuild9_linux_amd64.tar.gz readme.md $HOME/bin
 
 # config
 crossfid config chain-id $CROSSFI_CHAIN_ID
@@ -123,12 +123,8 @@ LimitNOFILE=65535
 WantedBy=multi-user.target
 EOF
 
-crossfid tendermint unsafe-reset-all --home $HOME/.mineplex-chain
-if curl -s --head curl https://testnet-files.itrocket.net/crossfi/snap_crossfi.tar.lz4 | head -n 1 | grep "200" > /dev/null; then
-  curl https://testnet-files.itrocket.net/crossfi/snap_crossfi.tar.lz4 | lz4 -dc - | tar -xf - -C $HOME/.mineplex-chain
-    else
-  echo no have snap
-fi
+crossfid tendermint unsafe-reset-all --home $HOME/.mineplex-chain --keep-addr-book
+curl https://snapshots-testnet.nodejumper.io/crossfi-testnet/crossfi-testnet_latest.tar.lz4 | lz4 -dc - | tar -xf - -C $HOME/.mineplex-chain
 
 # start service
 sudo systemctl daemon-reload
