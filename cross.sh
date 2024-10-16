@@ -39,7 +39,7 @@ fi
 if [ ! $WALLET ]; then
 	echo "export WALLET=wallet" >> $HOME/.bash_profile
 fi
-echo "export CROSSFI_CHAIN_ID=crossfi-evm-testnet-1" >> $HOME/.bash_profile
+echo "export CROSSFI_CHAIN_ID=crossfi-mainnet-1" >> $HOME/.bash_profile
 source $HOME/.bash_profile
 
 # update
