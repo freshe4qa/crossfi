@@ -113,7 +113,7 @@ WantedBy=multi-user.target
 EOF
 
 crossfid tendermint unsafe-reset-all --home $HOME/.crossfid --keep-addr-book
-curl https://server-3.itrocket.net/mainnet/crossfi/crossfi_2024-10-16_13972_snap.tar.lz4 | lz4 -dc - | tar -xf - -C $HOME/.crossfid
+curl https://server-3.itrocket.net/mainnet/crossfi/crossfi_2024-10-17_32699_snap.tar.lz4 | lz4 -dc - | tar -xf - -C $HOME/.crossfid
 
 # start service
 sudo systemctl daemon-reload
